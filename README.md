@@ -1,5 +1,5 @@
-# cse234 Term Project
-### Github@nsi-cyber
+# cse234 Mobile Term Project
+### [nsi-cyber](https://github.com/nsi-cyber)
 ### [akeedy](https://github.com/Akeedy)
 
 A mobile application written with Android studio in java.
