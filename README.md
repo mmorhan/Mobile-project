@@ -1,6 +1,6 @@
 # cse234 Term Project
-### @nsi-cyber(https://github.com/nsi-cyber)
-### @akeedy
+### Github@nsi-cyber
+### [akeedy](https://github.com/Akeedy)
 
 A mobile application written with Android studio in java.
 It's A ticket app for bus and flight ticket
