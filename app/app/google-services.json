@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1021865220095",
+    "project_id": "ticketapp-94d2c",
+    "storage_bucket": "ticketapp-94d2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021865220095:android:ed3d375b621f8c835879ca",
+        "android_client_info": {
+          "package_name": "com.example.ticketapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021865220095-glqsq3rtbe3uij2cdf47por68jfe2e99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb0zWDu_HPL7IPnY4Vg2lYRkp-4Bb0QqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021865220095-glqsq3rtbe3uij2cdf47por68jfe2e99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

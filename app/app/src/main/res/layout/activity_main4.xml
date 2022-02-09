@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_background"
+    tools:context=".main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"></ImageButton>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Please Fill The Form"
+                android:textAlignment="center"
+                android:textSize="25dp"></TextView>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="onClickMenu"
+                android:src="@drawable/ic_baseline_menu_24"></ImageView>
+        </LinearLayout>
+
+
+        <!--        next content-->
+
+        <TextView
+            android:id="@+id/creditcard"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="50dp"
+            android:textSize="19dp"
+            android:gravity="start"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <EditText
+            android:id="@+id/ccnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:width="300dp"
+            android:background="@drawable/custom_input"
+            android:drawableEnd="@drawable/ic_debit"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="____ ____ ____ ____"
+            android:inputType="number"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/creditcard"
+            tools:ignore="MissingConstraints"
+            android:drawableRight="@drawable/ic_debit" />
+
+        <EditText
+            android:id="@+id/ccnumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="300dp"
+            android:background="@drawable/custom_input"
+            android:drawableEnd="@drawable/ic_baseline_person_24_gray"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Card holders name"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ccnumber"
+            android:drawableRight="@drawable/ic_baseline_person_24" />
+
+        <EditText
+            android:id="@+id/ccnumber3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="300dp"
+            android:background="@drawable/custom_input"
+            android:drawableEnd="@drawable/ic_cvv"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="CVV"
+            android:inputType="number"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ccnumber2"
+            android:drawableRight="@drawable/ic_cvv" />
+
+        <EditText
+            android:id="@+id/ccnumber4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="300dp"
+            android:background="@drawable/custom_input"
+            android:drawableRight="@drawable/ic_calendar"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="dd/MM"
+            android:inputType="datetime"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ccnumber3" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ccnumber4"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="#4EA616"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start">
+
+        <include layout="@layout/navigation_drawer"></include>
+
+    </RelativeLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

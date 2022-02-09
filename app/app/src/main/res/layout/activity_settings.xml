@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".others.SettingsActivity">
+
+
+    <ImageButton
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></ImageButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+
+        android:background="@drawable/custom_flight_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/go_back"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/custom_person_icon"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/changephoto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:text="change_photo"
+            android:textColor="@color/red"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="170dp" />
+
+        <EditText
+            android:id="@+id/personName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="300dp"
+            android:autofillHints=""
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/ic_baseline_person_24_gray"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="204dp" />
+
+        <EditText
+            android:id="@+id/Surname3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="300dp"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/ic_baseline_person_24_gray"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="surname"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="269dp" />
+
+        <EditText
+            android:id="@+id/emailAddress3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="300dp"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/custom_email_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="321dp" />
+
+        <EditText
+            android:id="@+id/password3"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:width="300dp"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/custom_password_icon"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="373dp" />
+
+
+        <EditText
+            android:id="@+id/phone3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="300dp"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="phone"
+            android:inputType="phone"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="481dp" />
+
+        <EditText
+            android:id="@+id/tcnumber3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="300dp"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/ic_tc"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="t_c_number"
+            android:inputType="number"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="423dp" />
+
+
+        <Button
+            android:id="@+id/dateinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:width="300dp"
+            android:backgroundTint="@color/gray"
+            android:hint="Select Date of Birth"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/save3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="save changes"
+            app:backgroundTint="@color/red"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="612dp"></Button>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

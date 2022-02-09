@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.SearchFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="745dp"
+        android:orientation="vertical"
+        android:background="@mipmap/seat_plane"
+        android:padding="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Find Your Flight"
+            android:textColor="@color/black"
+            android:textFontWeight="10"
+            android:textSize="20dp" />
+
+
+        <Switch
+            android:id="@+id/oneWay"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:text="One Way" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_departure"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/act_departure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:hint="Departure" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_compare_arrows_24" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_where"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/act_where"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:hint="Where" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/search_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/gray_white"
+            android:ems="10"
+            android:hint="Date"
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/search_date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/gray_white"
+            android:ems="10"
+            android:hint="Return Date"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:visibility="visible" />
+
+        <Switch
+            android:id="@+id/withOutTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Don't Show Transfers" />
+
+
+        <Button
+            android:id="@+id/search_flight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/red"
+            android:text="Search" />
+
+    </LinearLayout>
+</FrameLayout>

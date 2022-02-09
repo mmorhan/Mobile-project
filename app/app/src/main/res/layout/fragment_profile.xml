@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                ></de.hdodenhof.circleimageview.CircleImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:orientation="vertical"
+                >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:text="Enes Ay"
+                   android:id="@+id/profile_name_surname"
+                   android:gravity="bottom"
+                   android:textSize="25dp"
+                   ></TextView>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_email"
+                    android:text="Balblala@gmail.com"
+                 ></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/settingtab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="Settings"
+                android:textColor="@color/red"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_flight_24"
+                android:text="Flights"
+                android:textSize="10dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/profile_flights"
+                android:backgroundTint="@color/white">
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_mode_comment_24"
+                android:text="Messages"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/profile_messages"
+                android:textSize="10dp"
+                android:backgroundTint="@color/white">
+            </Button>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fav_recyler_view"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
