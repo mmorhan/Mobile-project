@@ -21,4 +21,4 @@
 
 ### Chat Page
 
-![Main Page](https://github.com/Akeedy/Mobile-project/blob/main/wireframes/13-Profile.png))
+![Main Page](https://github.com/Akeedy/Mobile-project/blob/main/wireframes/16-Customer%20Support.png)
