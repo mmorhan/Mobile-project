@@ -12,6 +12,13 @@
 - Firebase Realtime storeage used for built-in chat application
 
 - Main Page
+
 ![Main Page](https://github.com/Akeedy/Mobile-project/blob/main/wireframes/3-aMain-2.png)
+
 - User Page
-![Main Page](https://github.com/Akeedy/Mobile-project/blob/main/wireframes/3-aMain-2.png)
+
+![Main Page](https://github.com/Akeedy/Mobile-project/blob/main/wireframes/13-Profile.png)
+
+- Chat Page
+
+![Main Page](https://github.com/Akeedy/Mobile-project/blob/main/wireframes/13-Profile.png))
