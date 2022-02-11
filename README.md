@@ -11,7 +11,7 @@
 - Google Authentication used for authorization and managing users
 - Firebase Realtime storeage used for built-in chat application
 
-###Main Page
+### Main Page
 
 ![Main Page](https://github.com/Akeedy/Mobile-project/blob/main/wireframes/3-aMain-2.png)
 
